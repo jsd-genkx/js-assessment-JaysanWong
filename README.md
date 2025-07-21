@@ -126,7 +126,7 @@
 ---
 
 **Please Write Down Your Thinking Process Below:**
-
+![flow](/flow.jpg)
 ---
 
 ### Thinking Process
