@@ -131,10 +131,24 @@
 
 ### Thinking Process
 
-1. // step 1
-2. // step 2
-3. // ...
-4. // step n
+1. สร้าง field array 3x3
+2. กำหนดค่า x,y=0
+3. รับค่า prompt
+4. เช็คค่า prompt = L/R/U/D ?
+    promt=L/l, x++
+    promt=R/r, x--
+    promt=U/u, y++
+    promt=D/d, y--
+      เช็คค่า x>2? no=เล่นต่อ / y=จบเกม
+      เช็คค่า x<0? no=เล่นต่อ / y=จบเกม
+      เช็คค่า y>2? no=เล่นต่อ / y=จบเกม
+      เช็คค่า y<0? no=เล่นต่อ / y=จบเกม
+    promt=อื่นๆ ให้วนกลับไปรับค่า prompt ใหม่
+5. print x,y
+6. เช็คว่า ค่าในตำแหน่งปัจจุบัน = hot/hole?
+    ถ้าเป็น hot = ชนะ/จบเกม
+    ถ้าเป็น hole = แพ้/จบเกม
+    ถ้าเป็นค่าอื่น = วนกลับไปรับค่า prompt ใหม่
 
 _Notes:_<br>
 _- You can attach flowcharts, diagrams, and images as needed._<br>
